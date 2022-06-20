@@ -2,7 +2,7 @@ name: Main Workflow
 on: [push]
 jobs:
   build:
-    name: Run k6 test
+    name: Run NosyMouse tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -10,3 +10,9 @@ jobs:
       - name: Install NosyMouse CLI
         run: |
           curl https://github.com/myllil/NOSYMOUSE-CLI/blob/main/nosymouse-linux-x64.zip -L | unzip -q nosymouse-linux-x64.zip
+      - name: Check content of directory
+        run: |
+          ls -l
+    - name: Run tests
+        run: |
+          ./Nosymouse
