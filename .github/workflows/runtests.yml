@@ -10,9 +10,9 @@ jobs:
       - name: Install NosyMouse CLI
         run: |
           curl https://github.com/myllil/NOSYMOUSE-CLI/blob/main/nosymouse-linux-x64.zip -L | unzip -q nosymouse-linux-x64.zip
-      - name: Check content of directory
+      - name: Give rights to execute
         run: |
-          ls -l
+          chmod 777 *
       - name: run NosyMouse tests against dev
         run: |
           ./nosymouse -action:run -pat:"2mjDoABTbk+WHZWZH0CG" -projectId:"df9cbf4f-7c81-4537-9b5b-3ca74c200e7f" -scenarioId:"9e6845b3-3fb3-4590-85e3-84b08c29146e" -env:"dev" -url:"https://app.nosymouse.io"
