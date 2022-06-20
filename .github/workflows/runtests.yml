@@ -13,6 +13,3 @@ jobs:
       - name: Check content of directory
         run: |
           ls -l
-    - name: Run tests
-        run: |
-          ./Nosymouse
