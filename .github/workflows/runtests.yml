@@ -9,4 +9,4 @@ jobs:
         uses: actions/checkout@v2
       - name: Install NosyMouse CLI
         run: |
-          curl https://github.com/myllil/NOSYMOUSE-CLI/blob/main/nosymouse-linux-x64.zip -L | tar xvz --strip-components 1
+          curl https://github.com/myllil/NOSYMOUSE-CLI/blob/main/nosymouse-linux-x64.zip -L | unzip -q nosymouse-linux-x64.zip
