@@ -13,3 +13,6 @@ jobs:
       - name: Check content of directory
         run: |
           ls -l
+      - name: run NosyMouse tests against dev
+        run: |
+          ./nosymouse -action:run -pat:"2mjDoABTbk+WHZWZH0CG" -projectId:"df9cbf4f-7c81-4537-9b5b-3ca74c200e7f" -scenarioId:"9e6845b3-3fb3-4590-85e3-84b08c29146e" -env:"dev" -url:"https://app.nosymouse.io"
