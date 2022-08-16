@@ -5,14 +5,12 @@ jobs:
     name: Run NosyMouse tests
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Install NosyMouse CLI
         run: |
           curl https://github.com/myllil/NOSYMOUSE-CLI/blob/main/nosymouse-linux-x64.zip -L | unzip -q nosymouse-linux-x64.zip
       - name: Give rights to execute
         run: |
           chmod 777 *
-      - name: run NosyMouse tests against dev
+      - name: run NosyMouse tests against STAGING
         run: |
-          ./nosymouse -action:run -pat:"2mjDoABTbk+WHZWZH0CG" -projectId:"152c14dd-24fe-484a-8ece-3fb289e15f8d" -scenarioId:"39daf65d-3c13-45bc-bd5e-586389350396" -env:"staging" -url:"https://app.nosymouse.io"
+          ./nosymouse -action:run -pat:"2mjDoABTbk+WHZWZH0CG" -projectId:"98a61049-49f6-42bf-805d-11fd37e1f3b4" -scenarioId:"ed1bb01-a5ad-438f-9795-02aecaef31ca" -env:"STAGING" -url:"https://app.nosymouse.io"
