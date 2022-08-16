@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Install NosyMouse CLI
         run: |
-          curl https://github.com/myllil/NOSYMOUSE-CLI/blob/3adc73766b6a2f8ff370fa02c25416075075b666/nosymouse-linux-x64.zip -L | unzip -q nosymouse-linux-x64.zip
+          curl https://github.com/myllil/NOSYMOUSE-CLI/blob/main/nosymouse-linux-x64.zip -L | unzip -q nosymouse-linux-x64.zip
       - name: Give rights to execute
         run: |
           chmod 777 *
