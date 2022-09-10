@@ -9,10 +9,10 @@ jobs:
         uses: actions/checkout@v2
       - name: Install NosyMouse CLI
         run: |
-          curl https://github.com/myllil/NOSYMOUSE-CLI/blob/main/nosymouse-linux-x64.zip -L | unzip -q nosymouse-linux-x64.zip
+          curl https://github.com/myllil/NOSYMOUSE-CLI/blob/main/linux-x64.zip -L | unzip -q nosymouse-linux-x64.zip
       - name: Give rights to execute
         run: |
           chmod 777 *
       - name: run NosyMouse tests against STAGING
         run: |
-          ./nosymouse -action:run -pat:"2mjDoABTbk+WHZWZH0CG" -projectId:"98a61049-49f6-42bf-805d-11fd37e1f3b4" -scenarioId:"ed1bb01-a5ad-438f-9795-02aecaef31ca" -env:"STAGING" -url:"https://app.nosymouse.io"
+          ./nosymouse -action:run -pat:"2mjDoABTbk+WHZWZH0CG" -projectId:"c98f5013-2063-41c2-a1ff-492291f51e53" -scenarioId:"d87ffddd-b887-4ad5-be17-e3838cef07fe" -env:"env1" -url:"https://app-dev.nosymouse.io"
