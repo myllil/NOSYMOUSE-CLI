@@ -18,4 +18,4 @@ jobs:
           chmod 777 *
       - name: run NosyMouse tests against STAGING
         run: |
-          ./nosymouse -action:run -pat:"2mjDoABTbk+WHZWZH0CG" -projectId:"c98f5013-2063-41c2-a1ff-492291f51e53" -scenarioId:"d87ffddd-b887-4ad5-be17-e3838cef07fe" -env:"env1" -url:"https://app-dev.nosymouse.io"
+         cd linux-x64 | ./nosymouse -action:run -pat:"2mjDoABTbk+WHZWZH0CG" -projectId:"c98f5013-2063-41c2-a1ff-492291f51e53" -scenarioId:"d87ffddd-b887-4ad5-be17-e3838cef07fe" -env:"env1" -url:"https://app-dev.nosymouse.io"
