@@ -9,13 +9,13 @@ jobs:
         uses: actions/checkout@v2
       - name: get zip
         run: |
-          curl https://github.com/myllil/NOSYMOUSE-CLI/blob/main/linux-x64.zip -L | unzip linux-x64.zip
+          curl https://github.com/myllil/NOSYMOUSE-CLI/blob/main/linux-64-092022.zip -L | unzip linux-64-092022.zip
       - name: show content
         run: |
           ls -la
       - name: Give rights to execute
         run: |
           chmod 777 *
-      - name: run NosyMouse tests against STAGING
+      - name: run NosyMouse tests against DEV
         run: |
          cd linux-x64 | ./nosymouse -action:run -pat:"2mjDoABTbk+WHZWZH0CG" -projectId:"c98f5013-2063-41c2-a1ff-492291f51e53" -scenarioId:"d87ffddd-b887-4ad5-be17-e3838cef07fe" -env:"env1" -url:"https://app-dev.nosymouse.io"
