@@ -15,7 +15,10 @@ jobs:
           ls -la
       - name: unzip
         run: |
-          unzip -q nosymouse-linux-x64.zip
+          unzip -q linux-x64.zip
+      - name: show content2
+        run: |
+          ls -la
       - name: Give rights to execute
         run: |
           chmod 777 *
