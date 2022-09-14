@@ -16,6 +16,6 @@ jobs:
       - name: Give rights to execute
         run: |
           chmod 777 *
-      - name: run NosyMouse tests against DEV
+      - name: run NosyMouse tests against STAGING
         run: |
-         cd linux-x64 | ./nosymouse -action:run -pat:"2mjDoABTbk+WHZWZH0CG" -projectId:"c98f5013-2063-41c2-a1ff-492291f51e53" -scenarioId:"d87ffddd-b887-4ad5-be17-e3838cef07fe" -env:"env1" -url:"https://app-dev.nosymouse.io"
+         cd linux-x64 | ./nosymouse -action:run -pat:"2mjDoABTbk+WHZWZH0CG" -projectId:"381ba2a8-846f-40e6-af22-284dd5245c83" -scenarioId:"e1d40d31-aeb8-4a02-9260-f3249c4677dd" -env:"env1" -url:"https://app.nosymouse.io"
